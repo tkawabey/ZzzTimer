@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+
+
+    <fragment class="four.non.bronds.yyys.zzztimer.activity.ZzzTimerActivity$TabsFragment"
+            android:id="@+id/navi_panel" android:layout_width="0px" android:layout_height="fill_parent" android:layout_weight="0.3"/>
+            
+    <FrameLayout android:id="@+id/work_panel" android:layout_weight="1"
+            android:layout_width="0px" android:layout_height="fill_parent" >
+	    <android.support.v4.view.ViewPager
+	            android:id="@+id/pager"
+	            android:layout_width="match_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1">
+	    </android.support.v4.view.ViewPager>
+		<TextView
+		    android:id="@+id/textNormal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+</LinearLayout>

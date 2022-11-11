@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@color/king_1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+	    <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+		    <ImageView
+		        android:id="@+id/imageAlbum"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/play_music_off" android:layout_gravity="center_vertical|center_horizontal"/>
+	    </FrameLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/txtName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Large Text"
+		        android:textAppearance="?android:attr/textAppearanceMedium" 
+		        android:layout_gravity="center_vertical" android:textColor="@color/king_6"/>
+
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" android:layout_marginLeft="20dip">
+		        
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.8"
+			        android:orientation="vertical" >
+				    <TextView
+				        android:id="@+id/txtAtrist"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="Atrist"
+				        android:textAppearance="?android:attr/textAppearanceSmall" 
+				        android:textColor="@color/king_5" android:layout_weight="0.8"/>	
+				    <TextView
+				        android:id="@+id/txtAlbum"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="Album"
+				        android:textAppearance="?android:attr/textAppearanceSmall" 
+				        android:textColor="@color/king_5" android:layout_weight="0.8"/>		        
+			    </LinearLayout>
+	
+
+			    <TextView
+			        android:id="@+id/txtTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="00:00"
+			        android:textAppearance="?android:attr/textAppearanceSmall" 
+			        android:textColor="@color/king_5" android:layout_marginRight="5dip"/>
+
+
+		    </LinearLayout>
+
+	    </LinearLayout>
+
+	    
+    </LinearLayout>
+	<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+</LinearLayout>

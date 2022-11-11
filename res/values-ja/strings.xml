@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZzzTimer</string>
+    <string name="err_app_init">アプリケーションの初期化に失敗しました。</string>
+    <string name="dateSliderTitle">Selected date</string>
+    <string name="not_spcify_name">アイテム名を入力してください.</string>
+    <string name="help">Help</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="minite_after">分後にタイムアップ</string>
+    <string name="kill_app_count">削除するアプリ数</string>
+    <string name="start_app_count">開始するアプリ数</string>
+    <string name="screen">スクリーン</string>
+    <string name="wifi">Wifi</string>
+    <string name="audio">スピーカーの音量</string>
+    <string name="time">タイムアップ時間</string>
+    <string name="kill_apps">Kill Applications</string>
+    <string name="start_apps">Start Applications</string>
+    <string name="apply">適用</string>
+    <string name="select_all">全て選択</string>
+    <string name="clear_all">全て解除</string>
+    <string name="new_item_timer">New Timer Item</string>
+    <string name="select_kill_apps">Select Kill Applications</string>
+    <string name="select_start_apps">Select Start Applications</string>
+    <string name="are_you_add_kill_app_on_start_app">[Start Applications]に追加したアプリケーションを[Kill Applications]に追加しますか？</string>
+    <string name="edit">編集</string>
+    <string name="delete">削除</string>
+    <string name="set">Set</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="wake_on_lan">Wake on LAN</string>
+    <string name="wol_invalid_ip">Broadcast Addressの指定が不正です </string>
+    <string name="wol_invalid_port">ポート番号の指定が不正です. </string>
+    <string name="wol_invalid_mac">MACアドレスの指定が不正です. </string>
+    <string name="repeat">Repeat</string>
+    <string name="disable">Disable</string>
+    <string name="are_you_cancel_timer">タイマーをキャンセルしてもよろしいですか?</string>
+    <string name="wol_enable">Enable Wake on LAN</string>
+    <string name="wol_broadcast">Broadcast Address</string>
+    <string name="wol_portnumber">Port Number</string>
+    <string name="wol_macaddressr">MAC Address</string>
+    <string name="wol_repeat">Repeat setting</string>
+    
+    <string name="mic_recod">Voice Recorder</string>
+    <string name="non_install_pipopadroid">ヴォイスレコーダーを行うには、pipoparoidを別途インストールする必要があります。</string>
+    
+    
+    <string name="add">追加</string>
+    <string name="timer">Timer</string>
+    <string name="computer">Computer</string>
+    <string name="preference">設定</string>
+    <string name="name">Name</string>
+    <string name="remote_ope">Remote Operation</string>
+    <string name="ip_addr">IP Address</string>
+    <string name="hint_name">名前を入力してください</string>
+    <string name="hint_ip_addr">IPアドレスかホスト名を入力してください</string>
+    <string name="zzz__portnumber">Zzz Server Port Number</string>
+    <string name="shutdown_opts">シャットダウンオプション</string>
+    <string name="restart_opts">リスタートオプション</string>
+    <string name="exe_image">Execute Image</string>
+    <string name="exe_params">Execute Parameters</string>
+    <string name="exe_cur_dir">Execute Current Directory</string>
+    <string name="hit_exec_image">リモート実行する実行ファイルのパスを入力してください</string>
+    <string name="hit_exec_params">リモート実行するEXEのパラメータを入力してください</string>
+    <string name="hit_exec_cur_dir">リモート実行時のカレントディレクトリを入力してください</string>
+    <string name="hit_show_alert_time">アラートとを表示する時間</string>
+    <string name="hit_alert_message">アラートメッセージを入力してください</string>
+    
+    <string name="dlg_title_computer_ope">Computer Operation</string>
+    <string name="confirm">Confirm</string>
+    <string name="dlg_message_deleete_computer">このコンピュータを削除してもよろしいですか？</string>
+    <string name="show_alert_time">アラートメッセージ表示時間</string>
+    <string name="alert_message">アラートメッセージ</string>
+    <string name="second">秒</string>
+    <string name="hib_restart">再開</string>
+    <string name="hib_restart_alert_time">再開時間</string>
+    <string name="msg_add_timer">タイマーアイテムがまだ追加されていません。メニューの追加ボタンから、タイマーアイテムを追加してください。</string>
+    <string name="msg_add_computer">コンピューターがまだ追加されていません。メニューの追加ボタンから、コンピューターを追加してください。</string>
+    <string name="select_computer">コンピューターを選択</string>
+    <string name="title_add_computer">コンピューターの追加</string>
+    <string name="title_edt_computer">コンピューターの編集</string>
+    <string name="title_add_timer">タイマーの追加</string>
+    <string name="hint_add_timer_name">タイマー名を入力してください</string>
+    <string name="timer_name">Timer Name</string>
+    <string name="err_remote_ope_connect_server">サーバーに接続できません.</string>
+    <string name="err_remote_ope_internal_error">内部得エラーが発生しました.</string>
+    <string name="err_remote_ope_no_logon">ログインしているユーザーがいないので、実行できません.</string>
+    <string name="err_remote_ope_execute_proc">リモート実行に失敗しました.</string>
+    <string name="err_remote_ope_not_found_user">指定したユーザーがみつかりません.</string>
+    <string name="err_remote_ope_timeout">タイムアウトしました.</string>
+    <string name="err_remote_ope_restart_time">リスタートするには、リスタート時間を指定してください</string>
+    <string name="err_remote_ope_remote_command">リモート実行するコマンドが入力されていません</string>
+    <string name="err_incorrect_ip">入力されたIP Addressが不正です。</string>
+    <string name="msg_remote_ope_complete">リモート操作の指示を実行しました.</string>
+    
+    <string name="play_music">Play Music</string>
+    <string name="title_play_music">Play Music Setting</string>
+    <string name="play_music_enable">Play Music</string>
+    <string name="play_music_select">Select Music Play List</string>
+    <string name="play_music_shuffle">Shuffle</string>
+    <string name="play_music_scrobbling">Scrobbling</string>
+    
+    <string name="hint_playlist">プレイリスト名を入力してください</string>
+    <string name="title_add_playlist">プレイリストの追加</string>
+    <string name="title_add_playlist_member">プレイリストメンバーの追加</string>
+    <string name="title_edt_playlist">プレイリスト編集</string>
+    <string name="title_del_playlist">プレイリスト削除</string>
+    <string name="title_del_playlist_member">プレイリストメンバーを削除</string>
+    <string name="title_ope_playlist">プレイリストオペレーション</string>
+    <string name="msg_del_playlist">プレイリストを削除してもよろしいですか？</string>
+    <string name="msg_del_playlist_member">プレイリストメンバーを削除してもよろしいですか？</string>
+    <string name="playlist_name">Playlist Name</string>
+    <string name="playlist_no_exist">プレイリストが存在しません。プレイリストを追加してください</string> 
+    <string name="errMsgNotExistStrage">SDカードの準備が出来ていません</string>  
+   
+    <string name="record_list">Record List</string>
+    <string name="menu">Menu</string>
+    <string name="select_action">Please Select Action</string>
+    <string name="please_input_title">Please input title.</string>
+    <string name="no_specify_title">タイトルが入力されていません.</string>
+    <string name="are_you_del_file">このファイルを削除してもよろしいですか?</string>
+    <string name="msg_reg_not_computer">コンピューターが登録されていません。コンピューターを登録してください</string>
+    
+    <string name="title_purchase_ogg">OGG ライセンスを購入しますか.</string>
+    <string name="msg_purchase_ogg">OGGでの録音は3分までしか録音できません。ライセンスを購入すると、3分以上録音する事が出来ます。</string>
+    <string name="err_billing_not_supported_message">購入サービスは現在使用できません。</string>
+    <string name="title_select_volum">Please select volume</string>
+    
+    <string name="err_reconsnize_voice_input_command">音声入力されたコマンドが認識できませんでした</string>
+    
+    <string name="title_record_tag">Record TAG</string>
+    <string name="recommend">このアプリを評価する</string>
+</resources>
+

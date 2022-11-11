@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+<!--      
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:background="@drawable/title_gradient" android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageIcon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/btnAddTimer" android:layout_toRightOf="@+id/imageIcon" android:layout_width="fill_parent" android:layout_marginLeft="50dip" android:id="@+id/textTitle" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="30sp"></TextView>                
+        <ImageButton android:id="@+id/btnAddComputer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add" android:layout_alignParentTop="true" android:layout_alignParentRight="true"></ImageButton>
+    </RelativeLayout>    
+-->
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_weight="1" android:background="@color/king_6">
+			<FrameLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="match_parent" >
+				<TextView 
+				    android:layout_height="wrap_content" 
+				    android:textAppearance="?android:attr/textAppearanceMedium" 
+				    android:layout_width="fill_parent" 
+				    android:id="@+id/textTitle" 
+				    android:textColor="@color/king_2" 
+				    android:textStyle="bold"
+				    android:textSize="24sp" 
+				    android:text="@string/computer" 
+				    android:layout_gravity="center_vertical"></TextView>			    
+			</FrameLayout>
+       		
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_weight="1">
+       		<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtNoItem" android:text="No Item" android:visibility="gone"></TextView>
+
+       		<ListView
+       		    android:id="@+id/listComputers"
+       		    android:layout_width="match_parent"
+       		    android:layout_height="wrap_content" >
+       		</ListView>
+
+       		<LinearLayout
+       		    android:id="@+id/layoutNoItem"
+       		    android:layout_width="match_parent"
+       		    android:layout_height="fill_parent" >
+
+       			<FrameLayout
+       			    android:id="@+id/frameLayout1"
+       			    android:layout_width="fill_parent"
+       			    android:layout_height="match_parent" >
+
+       				<LinearLayout
+       				    android:id="@+id/linearLayout3"
+       				    android:layout_width="wrap_content"
+       				    android:layout_height="wrap_content"
+       				    android:orientation="vertical" android:layout_gravity="center_vertical|center_horizontal">
+
+       					<TextView
+       					    android:id="@+id/textView2"
+       					    android:layout_width="wrap_content"
+       					    android:layout_height="wrap_content"
+       					    android:text="@string/msg_add_computer"
+       					    android:textAppearance="?android:attr/textAppearanceLarge" style="@style/text_h2"/>
+
+       				</LinearLayout>
+
+       			</FrameLayout>
+
+       		</LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

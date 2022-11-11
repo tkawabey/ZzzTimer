@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="@drawable/back__gradient" android:orientation="vertical" android:layout_marginTop="10dip">
+  
+  
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_weight="1">
+            <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:background="@drawable/title_gradient" android:layout_height="wrap_content">
+                <ImageView android:src="@drawable/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageIcon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+                <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/btnAddTimer" android:layout_toRightOf="@+id/imageIcon" android:layout_width="fill_parent" android:id="@+id/textTitle" android:textColor="#FFFFFF" android:textStyle="bold" android:text="@string/new_item_timer" android:layout_marginLeft="50dip" android:textSize="24sp"></TextView>
+            </RelativeLayout>
+       		<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtNoItem" android:text="No Item" android:visibility="gone"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+  
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+        <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+                <EditText android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginLeft="10dip" android:id="@+id/editTextItemName" android:layout_marginTop="10dip" android:layout_marginRight="10dip">
+                    <requestFocus></requestFocus>
+                </EditText>
+                <LinearLayout 
+                			android:id="@+id/layoutWidgetItemScreen" 
+                			android:layout_width="fill_parent"
+                			android:orientation="vertical"
+                			android:layout_height="wrap_content">
+                </LinearLayout>
+	            <LinearLayout 
+	            			android:layout_width="fill_parent" 
+	            			android:layout_height="wrap_content" 
+	            			android:orientation="vertical" 
+	            			android:id="@+id/layoutWidgetItemWifi">
+	            </LinearLayout>
+	            <LinearLayout 
+	            	android:layout_width="fill_parent" 
+	            	android:layout_height="wrap_content" 
+	            	android:orientation="vertical" 
+	            	android:id="@+id/layoutWidgetItemRecord">
+	            </LinearLayout>
+	            <FrameLayout android:id="@+id/layoutWidgetWol" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imgWOL" android:src="@drawable/wol_disable"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout40" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/wake_on_lan"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:layout_width="fill_parent" android:id="@+id/txtWolDesc"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" style="@style/ButtonBlack" android:text="@string/set" android:id="@+id/btnWOL"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            <LinearLayout 
+	            			android:layout_width="fill_parent" 
+	            			android:layout_height="wrap_content" 
+	            			android:orientation="vertical" 
+	            			android:id="@+id/layoutWidgetItemAudio">
+	            </LinearLayout>
+	            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/timer"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/time"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtTimeDesc" android:layout_width="fill_parent"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:text="Set" android:id="@+id/btnSetTimer" style="@style/ButtonBlack"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/app"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/kill_apps"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtKillAppDesc" android:layout_width="fill_parent"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:text="Set" android:id="@+id/btnKillApp" style="@style/ButtonBlack"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            
+	            
+	            
+	            
+	            
+	            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView2" android:src="@drawable/start_app"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/start_apps"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtStartAppDesc" android:layout_width="fill_parent"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:text="Set" android:id="@+id/btnStartApp" style="@style/ButtonBlack"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_alignParentBottom="true" android:id="@+id/layoutApply" android:layout_alignBottom="@id/scrollView1" android:background="@drawable/title_gradient">
+            <Button android:layout_height="wrap_content" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_margin="10dip" android:id="@+id/btnApply" style="@style/ButtonBrown" android:text="@string/apply"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

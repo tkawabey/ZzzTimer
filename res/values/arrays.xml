@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="wol_repeat">
+		<item>first one</item>
+		<item>10 sec</item>
+		<item>30 sec</item>
+		<item>1 min</item>
+		<item>2 min</item>
+		<item>5 min</item>
+		<item>10 min</item>
+		<item>30 min</item>
+		<item>1 hour</item>
+	</string-array>
+	<string-array name="computer_long_click_menu">
+		<item>Remote Operation</item>
+		<item>Edit</item>
+		<item>Delete</item>
+	</string-array>
+	<string-array name="computer_remote_operations">
+		<item>Shutdown</item>
+		<item>Reboot</item>
+		<item>Stand by</item>
+		<item>Hibernate</item>
+		<item>Log off</item>
+		<item>Lock Computer</item>
+		<item>Screen OFF</item>
+		<item>Test Remote Execute</item>
+	</string-array>
+	<string-array name="playlist_ope">
+		<item>Rename</item>
+		<item>Delete</item>
+	</string-array>
+	<string-array name="rec_format_disp">
+		<item>PCM</item>
+		<item>OGG</item>
+	</string-array>
+	<string-array name="rec_format_val">
+		<item >0</item>
+		<item >1</item>
+	</string-array>
+	<string-array name="sampling_rate_titles">
+		<item>8,000 Hz</item>
+		<item>11,025 Hz</item>
+		<item>16,000 Hz</item>
+		<item>22,050 Hz</item>
+		<item>44,100 Hz</item>
+		<item>48,000 Hz</item>
+	</string-array>
+	<string-array name="sampling_rate_value">
+		<item>8000</item>
+		<item>11025</item>
+		<item>16000</item>
+		<item>22050</item>
+		<item>44100</item>
+		<item>48000</item>
+	</string-array>
+	<string-array name="play_list_strage_where_disp">
+		<item>External Only</item>
+		<item>Internal Only</item>
+		<item>Both</item>
+	</string-array>
+	<string-array name="play_list_strage_where_val">
+		<item >0</item>
+		<item >1</item>
+		<item >2</item>
+	</string-array>
+	<string-array name="rec_file_long_click_menu">
+		<item>Play</item>
+		<item>Edit Title</item>
+		<item>Delete</item>
+		<item>Mail</item>
+		<item>Share</item>
+	</string-array>
+</resources>

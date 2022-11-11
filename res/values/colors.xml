@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basic_blue1">#5781a9</color>
+    <color name="basic_blue2">#a4bcc6</color>
+    <color name="basic_blue3">#995781a9</color>
+    <color name="basic_orange1">#99eca14f</color>
+    <color name="basic_orange2">#66eca14f</color>
+    <color name="basic_white1">#eeffffff</color>
+    <color name="basic_white2">#99ffffff</color>
+    
+    <color name="king_1">#DFE2E7</color>
+    <color name="king_2">#CABEA7</color>
+    <color name="king_3">#B0A48E</color>
+    <color name="king_4">#9D8C73</color>
+    <color name="king_5">#73604B</color>
+    <color name="king_6">#4D3A27</color>
+</resources>

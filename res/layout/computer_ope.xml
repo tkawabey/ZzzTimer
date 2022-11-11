@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+
+    
+    <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="fill_parent" android:layout_weight="1">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginRight="10dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical" android:background="@color/king_6">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/txtName" android:text="@string/name" android:textColor="@color/king_1"></TextView>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+	            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/remote_ope" style="@style/text_h3"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+		            <Spinner
+		                android:id="@+id/spinnerRemoteOpe"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dip"
+		                android:entries="@array/computer_remote_operations"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/layoutExec"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" style="@style/back_h2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/restart_opts"
+                        style="@style/text_h2"/>
+
+                </LinearLayout>
+	
+	            <LinearLayout
+	                android:id="@+id/layoutSuspendOpt"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	                
+		            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="horizontal">
+		                <SeekBar
+		                    android:id="@+id/seekBarOnOff"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_weight="1" />
+<!-- 		                
+						<ToggleButton
+	                        android:id="@+id/toggleBtnAfterExec"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="　　" android:background="@drawable/toggle_on"/>
+ -->	                        
+		                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/hib_restart" style="@style/text_h3"></TextView>
+
+
+
+		            </LinearLayout>
+		            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+		
+		            
+		            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+		                <TextView 
+		                    android:layout_width="wrap_content" 
+		                    android:layout_height="wrap_content" 
+		                    android:text="@string/hib_restart_alert_time" style="@style/text_h3"></TextView>
+		                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+
+		                	<Button
+		                	    android:id="@+id/btnRestartAfterTime"
+		                	    android:layout_width="wrap_content"
+		                	    android:layout_height="wrap_content"
+		                	    android:layout_weight="1"
+		                	    android:text="00:00" android:layout_marginLeft="10dip"/>
+		                </LinearLayout>
+		            </LinearLayout>
+		            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	            </LinearLayout>
+	            
+		    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+	                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/exe_image" style="@style/text_h3"></TextView>
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+	                    <EditText android:layout_width="wrap_content" 
+	                        android:layout_height="wrap_content" 
+	                        android:id="@+id/edtExeImage" 
+	                        android:hint="@string/hit_exec_image" style="@style/edit_h2.singleline">
+	                    </EditText>
+	                </LinearLayout>
+	            </LinearLayout>
+	            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	
+	
+	
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+	                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/exe_params" style="@style/text_h3"></TextView>
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+	                    <EditText 
+	                        android:layout_width="wrap_content" 
+	                        android:layout_height="wrap_content" 
+	                        android:id="@+id/edtExeParam" 
+	                        android:hint="@string/hit_exec_params" style="@style/edit_h2.singleline">
+	                    </EditText>
+	                </LinearLayout>
+	            </LinearLayout>
+	            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	            
+	
+	
+	
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+	                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/exe_cur_dir" style="@style/text_h3"></TextView>
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+	                    <EditText 
+	                        android:layout_width="wrap_content" 
+	                        android:layout_height="wrap_content" 
+	                        android:id="@+id/edtExeCurDir" 
+	                        android:hint="@string/hit_exec_cur_dir" style="@style/edit_h2.singleline">
+	                    </EditText>
+	                </LinearLayout>
+	            </LinearLayout>
+	            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	 	            
+		            
+            </LinearLayout>
+
+            
+            <LinearLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:id="@+id/layOutShutdownOpt" 
+                android:orientation="vertical">            
+            
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" style="@style/back_h2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shutdown_opts"
+                        style="@style/text_h2"/>
+
+                </LinearLayout>
+	                
+                
+	            <LinearLayout 
+	                android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content" 
+	                android:id="@+id/linearLayout4" 
+	                android:orientation="vertical">
+	                <TextView 
+	                    android:layout_width="wrap_content" 
+	                    android:layout_height="wrap_content" 
+	                    android:id="@+id/textView1" 
+	                    android:text="@string/show_alert_time" style="@style/text_h3"></TextView>
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+	
+	                	<Button
+	                	    android:id="@+id/btnShutdownAfterTime"
+	                	    android:layout_width="wrap_content"
+	                	    android:layout_height="wrap_content"
+	                	    android:layout_weight="1"
+	                	    android:text="00:00" />
+	                </LinearLayout>
+	            </LinearLayout>
+	            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	
+	
+	
+	            <LinearLayout 
+	                android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content" 
+	                android:id="@+id/linearLayout4" 
+	                android:orientation="vertical">
+	                <TextView 
+	                    android:layout_width="wrap_content" 
+	                    android:layout_height="wrap_content" 
+	                    android:id="@+id/textView1" 
+	                    android:text="@string/alert_message" style="@style/text_h3"></TextView>
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+	                    <EditText android:layout_width="wrap_content" 
+	                        android:layout_height="wrap_content" 
+	                        android:id="@+id/edtAlertMessage" 
+	                        android:hint="@string/hit_alert_message" style="@style/edit_h2.singleline">
+	                    </EditText>
+	                </LinearLayout>
+	            </LinearLayout>
+	            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+	        
+	        </LinearLayout>    
+         
+                
+
+		</LinearLayout>    
+
+    </ScrollView>    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnExecute"
+                style="@style/ButtonBrown"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dip"
+                android:layout_weight="0.5"
+                android:text="Execute" />
+
+            <ImageButton
+                android:id="@+id/imgBtnVoiceInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speah_big" android:layout_marginRight="20dip" android:background="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

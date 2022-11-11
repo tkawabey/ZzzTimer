@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyLightTheme" parent="android:Theme.Light">
+    </style>
+    <style name="AlertDialog">
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@color/basic_blue1</item>
+        <item name="android:topDark">@color/basic_blue1</item>
+        <item name="android:centerBright">@color/basic_blue2</item>
+        <item name="android:centerDark">@color/basic_blue2</item>
+        <item name="android:centerMedium">@color/basic_blue2</item>
+        <item name="android:bottomBright">@color/basic_blue3</item>
+        <item name="android:bottomDark">@color/basic_blue3</item>
+        <item name="android:bottomMedium">@color/basic_blue3</item>
+    </style>    
+    <style name="green_glass" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">95px</item>
+        <item name="android:layout_height">210px</item>
+        <item name="android:scrollbars">none</item>     
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/custum_soinner_bg</item>
+        <item name="child_background">@drawable/custum_soinner_line</item>
+        <item name="header_background">@drawable/custum_soinner_line</item>
+        <item name="footer_background">@drawable/custum_soinner_line</item>
+    </style>  
+    <style name="wood" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">130px</item>
+        <item name="android:layout_height">340px</item>
+        <item name="android:scrollbars">none</item>     
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/custum_soinner_bg</item>
+		<item name="child_background">@drawable/custum_soinner_line</item>
+        <item name="header_background">@drawable/custum_soinner_line</item>
+        <item name="footer_background">@drawable/custum_soinner_line</item>
+    </style> 
+    
+    <!-- 
+		Activityを半透明にする方法 – Android
+		Posted by team-hiroq in android, programming
+		
+		今回は、表題のとおりActivityを半透明にする方法です。
+		手順は以下の通りです
+		
+		    半透明の背景(drawable)を定義する
+		    半透明スタイルを定義する
+		    定義した半透明スタイルをActivityに設定する
+     -->
+	<drawable name="background">#99000000</drawable>
+	<style name="Theme.Transparent" parent="android:style/Theme.Translucent">
+		<item name="android:windowBackground">@drawable/background</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	
+	
+	
+	<style name="ButtonBrown" parent="@android:style/ButtonBar">
+		<item name="android:background">@drawable/blue_button</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="ButtonBlack" parent="@android:style/ButtonBar">
+		<item name="android:background">@drawable/button_black</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="title_text" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/king_6</item>
+	</style>
+	<style name="text_h1" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/king_6</item>
+	</style>
+	<style name="back_h2">
+		<item name="android:background">@color/king_2</item>
+	</style>
+	<style name="text_h2" parent="@android:style/TextAppearance.Large">
+		<item name="android:textColor">@color/king_5</item>
+		<item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="text_small" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/king_5</item>
+		<item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="text_h3" parent="@android:style/TextAppearance.Large">
+		<item name="android:textColor">@color/king_4</item>
+		<item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="edit_h2" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/king_5</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">10dip</item>
+	</style>
+	<style name="edit_h2.singleline">
+		<item name="android:layout_weight">0.2</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="edit_h2.singleline.ip">
+		<item name="android:inputType">number</item>
+		<item name="android:lines">1</item>
+		<item name="android:digits">0123456789</item>
+		<item name="android:autoText">false</item>
+		<item name="android:numeric">signed</item>
+		<item name="android:capitalize">none</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="edit_h2.singleline.mac">
+		<item name="android:inputType">number</item>
+		<item name="android:lines">1</item>
+		<item name="android:digits">0123456789ABCDEFabcdef</item>
+		<item name="android:maxLength">2</item>
+		<item name="android:autoText">false</item>
+		<item name="android:numeric">signed</item>
+		<item name="android:capitalize">none</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_marginLeft">0dip</item>
+	</style>
+	<style name="edit_h2.singleline.number">
+		<item name="android:inputType">number</item>
+		<item name="android:lines">1</item>
+		<item name="android:digits">0123456789</item>
+		<item name="android:autoText">false</item>
+		<item name="android:numeric">signed</item>
+		<item name="android:capitalize">none</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	
+</resources>

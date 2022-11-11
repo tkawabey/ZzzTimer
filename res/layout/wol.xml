@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+  
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_weight="1">
+            <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:background="@drawable/title_gradient" android:layout_height="wrap_content">
+                <ImageView android:src="@drawable/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageIcon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+                <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/btnAddTimer" android:layout_toRightOf="@+id/imageIcon" android:layout_width="fill_parent" android:layout_marginLeft="50dip" android:id="@+id/textTitle" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="24sp" android:text="@string/wake_on_lan"></TextView>
+            </RelativeLayout>
+       		<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtNoItem" android:text="No Item" android:visibility="gone"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="fill_parent" android:layout_weight="1">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/linearLayout3">
+                <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/chkWakeOnLan" android:text="@string/wol_enable"></CheckBox>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/wol_broadcast"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:inputType="number" android:lines="1" android:digits="0123456789" android:autoText="false" android:numeric="signed" android:id="@+id/edtIP1" android:capitalize="none" android:maxLength="3" android:singleLine="true" android:text="255">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:inputType="number" android:lines="1" android:digits="0123456789" android:autoText="false" android:numeric="signed" android:id="@+id/edtIP2" android:capitalize="none" android:maxLength="3" android:singleLine="true" android:text="255">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:inputType="number" android:lines="1" android:digits="0123456789" android:autoText="false" android:numeric="signed" android:id="@+id/edtIP3" android:capitalize="none" android:maxLength="3" android:singleLine="true" android:text="255">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:inputType="number" android:lines="1" android:digits="0123456789" android:autoText="false" android:numeric="signed" android:id="@+id/edtIP4" android:capitalize="none" android:maxLength="3" android:singleLine="true" android:text="255">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                                        
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:text="@string/wol_portnumber"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/edtPort" android:layout_weight="0.2" android:digits="0123456789" android:inputType="number" android:autoText="false" android:capitalize="none" android:numeric="signed" android:singleLine="true" android:text="2304">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:text="@string/wol_macaddressr"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC1" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC2" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC3" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                                        
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC4" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC5" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" android:lines="1" android:autoText="false" android:capitalize="none" android:id="@+id/edtMAC6" android:singleLine="true" android:digits="0123456789ABCDEFabcdef" android:maxLength="2" android:maxLines="1" android:text="00">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                                        
+                </LinearLayout>                
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+            
+            
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/wol_repeat"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                	<Spinner android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/spinnerWolRepeat" android:entries="@array/wol_repeat" android:prompt="@string/wol_repeat"></Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+			
+<TableLayout android:id="@+id/TableLayout01" android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_width="fill_parent" android:background="@drawable/title_gradient">
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_margin="5dip" android:layout_weight="0.5" android:text="Apply" android:id="@+id/apply" style="@style/ButtonBrown"></Button>
+</TableRow>
+</TableLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+
+    <Button
+        android:id="@+id/btnNaviTimer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer" android:drawableLeft="@drawable/timer"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <Button
+        android:id="@+id/btnNaviComputer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/computer" android:drawableLeft="@drawable/network"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <Button
+        android:id="@+id/btnNaviMusic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_music" android:drawableLeft="@drawable/play_music_on"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btnNaviRec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/record_list" android:drawableLeft="@drawable/rec_enable"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

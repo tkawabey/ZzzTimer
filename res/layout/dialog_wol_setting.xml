@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical">
+		
+		    <LinearLayout
+		        android:id="@+id/linearLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+
+		        <CheckBox
+		            android:id="@+id/checkEnablrWOL"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/wol_enable" android:textColor="@color/basic_white1" android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+		
+		    </LinearLayout>
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+			<LinearLayout
+			    android:id="@+id/linearLayout2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/textView3"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="@string/select_computer"
+				    android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/basic_white2"/>
+
+				<Spinner
+				    android:id="@+id/spinnerWOLComputer"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="10dip"/>
+
+			</LinearLayout>
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+			<LinearLayout
+			    android:id="@+id/linearLayout4"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/textView4"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="@string/wol_repeat"
+				    android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/basic_white2"/>
+
+				<Spinner
+				    android:id="@+id/spinnerWOLRepeat"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="10dip" android:entries="@array/wol_repeat"/>
+				
+			</LinearLayout>
+		                
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

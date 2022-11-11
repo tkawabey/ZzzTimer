@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal">
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/playlist" />
+	    
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" android:layout_marginBottom="5dip" android:layout_marginTop="5dip">
+		    <TextView
+		        android:id="@+id/txtName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Large Text"
+		        android:textAppearance="?android:attr/textAppearanceLarge" 
+		        android:layout_gravity="center_vertical" android:textColor="@color/king_6"/>
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="5dip">
+		        
+	
+			    <TextView
+			        android:id="@+id/txtOther"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Medium Text"
+			        android:textAppearance="?android:attr/textAppearanceSmall" 
+			        android:textColor="@color/king_5" android:layout_weight="0.8"/>
+			    <TextView
+			        android:id="@+id/txtTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="00:00"
+			        android:textAppearance="?android:attr/textAppearanceSmall" 
+			        android:textColor="@color/king_5"/>
+		    </LinearLayout>
+	    </LinearLayout>
+	    
+    </LinearLayout>
+	<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+</LinearLayout>

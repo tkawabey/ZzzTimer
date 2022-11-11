@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back__gradient">
+<LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="1" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_weight="1">
+            <RelativeLayout android:layout_width="fill_parent" android:id="@+id/relativeLayout1" android:background="@drawable/title_gradient" android:layout_height="wrap_content">
+                <ImageView android:src="@drawable/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageIcon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+                <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/btnAddTimer" android:layout_toRightOf="@+id/imageIcon" android:layout_width="fill_parent" android:layout_marginLeft="50dip" android:id="@+id/textTitle" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="30sp"></TextView>                
+                <ImageButton android:id="@+id/btnAddTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_item" android:layout_alignParentTop="true" android:layout_alignParentRight="true"></ImageButton>
+            </RelativeLayout>
+       		<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtNoItem" android:text="No Item" android:visibility="gone"></TextView>
+       		<four.non.bronds.yyys.zzztimer.widgets.cover.CoverFlow android:minHeight="300dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/coverflow" android:layout_marginTop="10dp"></four.non.bronds.yyys.zzztimer.widgets.cover.CoverFlow>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:id="@+id/layoutSetItemPane">
+	            
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+	            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:id="@+id/layoutCountdown">
+	            
+	            	 <FrameLayout android:id="@+id/frameLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/timer_bk" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_marginBottom="20dip">
+					     <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="00:00:00" android:layout_width="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:textColor="#111111" android:textSize="30sp" android:id="@+id/textChronometer"></TextView>
+					</FrameLayout>
+	            </LinearLayout>
+
+	             <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal" android:layout_weight="1">
+	                 <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                     <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/timer"></ImageView>
+	                 </FrameLayout>
+	                 <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:layout_width="fill_parent">
+	                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/time"></TextView>
+	                     <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtTimeDesc" android:layout_width="fill_parent"></TextView>
+	                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTimeRunning" android:textColor="#FF0000" android:text="Running"></TextView>
+	                 </LinearLayout>
+	                 
+	
+	                 <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                     <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:text="Set" android:id="@+id/btnSetTimer" style="@style/ButtonBlack"></Button>
+	                 </FrameLayout>
+	             </LinearLayout>
+
+	             
+				<LinearLayout 
+					android:id="@+id/layoutWidgetItemScreen" 
+					android:layout_width="fill_parent"
+					android:orientation="vertical"
+					android:layout_height="wrap_content">
+				</LinearLayout>
+	            <LinearLayout 
+	            	android:layout_width="fill_parent" 
+	            	android:layout_height="wrap_content" 
+	            	android:orientation="vertical" 
+	            	android:id="@+id/layoutWidgetItemWifi">
+	            </LinearLayout>
+	            <LinearLayout 
+	            	android:layout_width="fill_parent" 
+	            	android:layout_height="wrap_content" 
+	            	android:orientation="vertical" 
+	            	android:id="@+id/layoutWidgetItemRecord">
+	            </LinearLayout>
+	            <FrameLayout android:id="@+id/layoutWidgetWol" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/wol" android:id="@+id/imgWOL"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout40" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/wake_on_lan"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:layout_width="fill_parent" android:id="@+id/txtWolDesc"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" style="@style/ButtonBlack" android:text="@string/set" android:id="@+id/btnWOL"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            <LinearLayout 
+	            	android:layout_width="fill_parent" 
+	            	android:layout_height="wrap_content" 
+	            	android:orientation="vertical" 
+	            	android:id="@+id/layoutWidgetItemAudio">
+	            </LinearLayout>
+	            <FrameLayout android:id="@+id/layoutWidgetKillApp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/app"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/kill_apps"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtKillAppDesc" android:layout_width="fill_parent"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:id="@+id/btnKillApp" style="@style/ButtonBlack" android:text="@string/set"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+	            
+	            
+	            
+
+	            <FrameLayout android:id="@+id/layoutWidgetStartApp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/backwidget_white" android:orientation="horizontal">
+	                    <FrameLayout android:layout_height="wrap_content" android:paddingLeft="15dip" android:paddingTop="8dip" android:paddingRight="10dip" android:paddingBottom="10dip" android:layout_width="wrap_content">
+	                        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView2" android:src="@drawable/start_app"></ImageView>
+	                    </FrameLayout>
+	                    <LinearLayout android:id="@+id/linearLayout40" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_weight="1">
+	                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000000" android:textStyle="bold" android:textSize="16dip" android:text="@string/start_apps"></TextView>
+	                        <TextView android:layout_height="wrap_content" android:textColor="#000000" android:id="@+id/txtStartAppDesc" android:layout_width="fill_parent"></TextView>
+	                    </LinearLayout>
+	                    <FrameLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="right|center_vertical" android:paddingLeft="0dip" android:paddingTop="0dip" android:paddingRight="15dip" android:paddingBottom="0dip" android:layout_width="wrap_content">
+	                        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="right|center_vertical" android:id="@+id/btnStartApp" style="@style/ButtonBlack" android:text="@string/set"></Button>
+	                    </FrameLayout>
+	                </LinearLayout>
+	            </FrameLayout>
+
+	            
+	            
+	            
+	            
+            </LinearLayout>
+
+        </ScrollView>
+ 
+    
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

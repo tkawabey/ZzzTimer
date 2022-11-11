@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Voice Record Setting">
+        <ListPreference android:key="rec_format" android:entries="@array/rec_format_disp" android:entryValues="@array/rec_format_val" android:title="Record Format" android:summary="Record Format" android:dialogIcon="@drawable/rec_enable"/>
+        <ListPreference android:entries="@array/sampling_rate_titles" android:entryValues="@array/sampling_rate_value" android:title="Sampling rate" android:key="rec_sampling_rate" android:summary="Sampling rate" android:dialogIcon="@drawable/rec_enable"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Play Music">
+        <PreferenceScreen android:key="play_music_volum" android:title="Volum" android:summary=""></PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

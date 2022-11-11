@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="wol_repeat">
+		<item>最初の1回</item>
+		<item>10 秒</item>
+		<item>30 秒</item>
+		<item>1 分</item>
+		<item>2 分</item>
+		<item>5 分</item>
+		<item>10 分</item>
+		<item>30 分</item>
+		<item>1 時間</item>
+	</string-array>
+	<string-array name="computer_long_click_menu">
+		<item>リモートオペレーション</item>
+		<item>編集</item>
+		<item>削除</item>
+	</string-array>
+	<string-array name="computer_remote_operations">
+		<item>シャットダウン</item>
+		<item>再起動</item>
+		<item>スタンバイ</item>
+		<item>ハイバーネート</item>
+		<item>ログオフ</item>
+		<item>コンピューターのロック</item>
+		<item>スクリーンオフ</item>
+		<item>任意のコマンド実行</item>
+	</string-array>
+	<string-array name="playlist_ope">
+		<item>名前変更</item>
+		<item>削除</item>
+	</string-array>
+	<string-array name="rec_file_long_click_menu">
+		<item>再生</item>
+		<item>タイトル編集</item>
+		<item>削除</item>
+		<item>メールする</item>
+		<item>共有</item>
+	</string-array>
+</resources>

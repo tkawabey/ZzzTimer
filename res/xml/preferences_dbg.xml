@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Voice Record Setting">
+        <ListPreference android:key="rec_format" android:entries="@array/rec_format_disp" android:entryValues="@array/rec_format_val" android:title="Record Format" android:summary="Record Format" android:dialogIcon="@drawable/rec_enable"/>
+        <ListPreference android:entries="@array/sampling_rate_titles" android:entryValues="@array/sampling_rate_value" android:title="Sampling rate" android:key="rec_sampling_rate" android:summary="Sampling rate" android:dialogIcon="@drawable/rec_enable"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Play Music">
+        <PreferenceScreen android:key="play_music_volum" android:title="Volum" android:summary=""></PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Log Setting">
+	    <PreferenceScreen android:key="log_setting" android:title="LogSetting" android:shouldDisableView="false">
+	        <CheckBoxPreference android:key="log_dbgmode" android:title="Debug Mode" android:summary="Debug Mode"/>
+	        <PreferenceCategory android:title="Log Setting">
+	            <CheckBoxPreference android:title="Error" android:summary="Error" android:key="log_opt_err"/>
+	            <CheckBoxPreference android:title="Function" android:summary="Function" android:key="log_opt_func"/>
+	            <CheckBoxPreference android:title="Information" android:key="log_opt_inf" android:summary="Information"/>
+	            <CheckBoxPreference android:title="Trace" android:summary="Trace" android:key="log_opt_trace"/>
+	            <CheckBoxPreference android:title="Sequence" android:summary="Sequence" android:key="log_opt_seq"/>
+	            <CheckBoxPreference android:title="SQL" android:summary="SQL" android:key="log_opt_sql"/>
+	            <CheckBoxPreference android:title="Write file" android:summary="Write file" android:key="log_opt_write_file"/>
+	            <CheckBoxPreference android:title="Write Logcat" android:summary="Write Logcat" android:key="log_opt_write_cat"/>
+	        </PreferenceCategory>
+	        <PreferenceCategory android:title="Log File">
+	            <EditTextPreference android:title="Log File Name" android:key="log_file_name" android:summary="Log File Name"/>
+	        </PreferenceCategory>
+	    </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Music Settig">
+        <ListPreference android:key="play_list_wehere" android:entries="@array/play_list_strage_where_disp" android:entryValues="@array/play_list_strage_where_val" android:dialogIcon="@drawable/icon" android:title="DB Search Location" android:summary="DB Search Location" android:dialogTitle="DB Search Location"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="In-AppBilling">
+        <PreferenceScreen android:key="in_app_billing_hst" android:title="In App-Billing" android:summary="In App-Billing"></PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

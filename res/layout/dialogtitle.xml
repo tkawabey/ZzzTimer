@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" android:background="@drawable/title_gradient">
+    <ImageView android:id="@+id/imageView1" android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+	<FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:gravity="center_vertical" android:textColor="#FFFFFF" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/dateSliderTitle" android:id="@+id/dateSliderTitleText" android:textStyle="bold" android:layout_gravity="center_vertical"></TextView>
+	</FrameLayout>
+</LinearLayout>

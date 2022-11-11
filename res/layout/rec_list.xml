@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="@color/king_1">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_weight="1" android:background="@color/king_6">
+			<FrameLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="match_parent" >
+				<TextView 
+				    android:layout_height="wrap_content" 
+				    android:textAppearance="?android:attr/textAppearanceMedium" 
+				    android:layout_width="fill_parent" 
+				    android:id="@+id/textTitle" 
+				    android:textColor="@color/king_2" 
+				    android:textStyle="bold"
+				    android:textSize="24sp" 
+				    android:text="@string/record_list" 
+				    android:layout_gravity="center_vertical"></TextView>			    
+			</FrameLayout>
+       		
+        </LinearLayout>
+    </LinearLayout>  
+    <FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent">
+<!-- 
+        <ImageView android:src="@drawable/dtfm_bk" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@drawable/dtfm_bk"></ImageView>
+-->
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@+id/listRecFiles" android:layout_width="fill_parent" android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+    </FrameLayout>
+    
+</LinearLayout>

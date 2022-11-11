@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical">
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+
+		        <CheckBox
+		            android:id="@+id/checkEnablePlayMusic"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/play_music" 
+		            android:textColor="@color/king_5" 
+		            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		
+		    </LinearLayout>
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" android:orientation="vertical">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="@string/play_music_select"
+				    android:textAppearance="?android:attr/textAppearanceLarge" style="@style/text_h3"/>
+
+				<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" >
+
+					<Spinner
+					    android:id="@+id/spinnerSelectMusic"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1" android:layout_marginLeft="10dip"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<CheckBox
+			    android:id="@+id/checkShuffle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/play_music_shuffle" android:layout_marginLeft="10dip" android:textColor="@color/king_6"/>
+
+			<CheckBox
+			    android:id="@+id/checkScrobbiling"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/play_music_scrobbling" android:layout_marginLeft="10dip" android:textColor="@color/king_6"/>
+			
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

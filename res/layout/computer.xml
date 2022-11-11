@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:background="@color/king_1">
+  
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_weight="1" android:background="@color/king_6">
+			<ImageView android:src="@drawable/network" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/imageIcon"></ImageView>
+			<FrameLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="match_parent" >
+				<TextView 
+				    android:layout_height="wrap_content" 
+				    android:textAppearance="?android:attr/textAppearanceLarge" 
+				    android:layout_width="fill_parent" 
+				    android:id="@+id/textTitle" 
+				    android:textColor="#FFFFFF" 
+				    android:textStyle="bold"
+				    android:textSize="24sp" 
+				    android:text="@string/title_add_computer" 
+				    android:layout_gravity="center_vertical"></TextView>			    
+			</FrameLayout>
+       		
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="fill_parent" android:layout_weight="1">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/name" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                    <!-- 
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                	 -->
+                    <EditText android:id="@+id/edtName" android:hint="@string/hint_name" style="@style/edit_h2.singleline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <requestFocus></requestFocus>
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/ip_addr" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/edtIPAddress" android:layout_weight="0.2" android:singleLine="true" android:hint="@string/hint_ip_addr" style="@style/edit_h2.singleline" android:layout_marginLeft="10dip">
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/btnSearchZZZ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/resolve_zzz" android:background="@null"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+            
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/wol_broadcast" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                    <EditText android:id="@+id/edtIP1" android:text="255" style="@style/edit_h2.singleline.ip" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:id="@+id/edtIP2" android:text="255" style="@style/edit_h2.singleline.ip" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:id="@+id/edtIP3" android:text="255" style="@style/edit_h2.singleline.ip" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text=" . "></TextView>
+                    <EditText android:id="@+id/edtIP4" android:text="255" style="@style/edit_h2.singleline.ip" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/wol_portnumber" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtPort"  android:text="2304" style="@style/edit_h2.singleline.number" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/zzz__portnumber" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtZzzPort" android:text="4949" style="@style/edit_h2.singleline.number" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/wol_macaddressr" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtMAC1" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:id="@+id/edtMAC2" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:id="@+id/edtMAC3" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                                        
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtMAC4" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:id="@+id/edtMAC5" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text=" : "></TextView>
+                    <EditText android:id="@+id/edtMAC6" android:text="00" style="@style/edit_h2.singleline.mac" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                                        
+                </LinearLayout>                
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Shutdown Option -->
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical" style="@style/back_h2">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shutdown_opts" style="@style/text_h2"></TextView>
+            </LinearLayout>            
+            <LinearLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:id="@+id/linearLayout4" 
+                android:orientation="vertical">
+                <TextView android:text="@string/show_alert_time" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" 
+                	    android:layout_height="wrap_content" 
+                	    android:textAppearance="?android:attr/textAppearanceLarge" 
+                	    android:id="@+id/textView2" 
+                	    android:text="   "></TextView>
+
+                	<Button
+                	    android:id="@+id/btnShutdownAfterTime"
+                	    android:layout_width="wrap_content"
+                	    android:layout_height="wrap_content"
+                	    android:layout_weight="1"
+                	    android:text="00:00" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+
+            <LinearLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:id="@+id/linearLayout4" 
+                android:orientation="vertical">
+                <TextView android:text="@string/alert_message" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" 
+                	    android:layout_height="wrap_content" 
+                	    android:textAppearance="?android:attr/textAppearanceLarge" 
+                	    android:id="@+id/textView2" 
+                	    android:text="   "></TextView>
+                    <EditText android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/edtAlertMessage" 
+                        android:hint="@string/hit_alert_message"
+                        style="@style/edit_h2.singleline">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+        
+
+
+            
+            
+            
+            <!-- Resume Option -->
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical" style="@style/back_h2">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restart_opts" style="@style/text_h2"></TextView>
+            </LinearLayout>  
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/edit_h2.singleline" android:text="@string/hib_restart"></TextView>
+                
+                <SeekBar
+                    android:id="@+id/seekBarOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+          
+
+
+
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/hib_restart_alert_time" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" 
+                	    android:layout_height="wrap_content" 
+                	    android:textAppearance="?android:attr/textAppearanceLarge" 
+                	    android:text="   "></TextView>
+
+                	<Button
+                	    android:id="@+id/btnRestartAfterTime"
+                	    android:layout_width="wrap_content"
+                	    android:layout_height="wrap_content"
+                	    android:layout_weight="1"
+                	    android:text="00:00" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+            
+            
+            <!-- Execute -->
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical" style="@style/back_h2">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Execute Options" style="@style/text_h2"></TextView>
+            </LinearLayout>              
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/exe_image" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtExeImage" android:hint="@string/hit_exec_image" style="@style/edit_h2.singleline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/exe_params" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtExeParam" android:hint="@string/hit_exec_params" style="@style/edit_h2.singleline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+
+
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+                <TextView android:text="@string/exe_cur_dir" style="@style/text_h3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout5">
+                	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:text="   "></TextView>
+                    <EditText android:id="@+id/edtExeCurDir" android:hint="@string/hit_exec_cur_dir" style="@style/edit_h2.singleline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_divider_horizontal_light"></ImageView>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+			
+	<TableLayout android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_width="fill_parent">
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_margin="5dip" android:layout_weight="0.5" android:text="Apply" android:id="@+id/btnApply" style="@style/ButtonBrown"></Button>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

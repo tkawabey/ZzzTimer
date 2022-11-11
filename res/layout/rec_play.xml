@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/king_1">
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_weight="1" android:background="@color/king_6">
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+				<TextView 
+				    android:layout_height="wrap_content" 
+				    android:textAppearance="?android:attr/textAppearanceLarge" 
+				    android:layout_width="fill_parent" 
+				    android:id="@+id/textTitle" 
+				    android:textColor="#FFFFFF" 
+				    android:textStyle="bold"
+				    android:gravity="center"></TextView>
+
+				<TextView
+				    android:id="@+id/txtArtist"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:textAppearance="?android:attr/textAppearanceSmall" 
+				    android:textColor="@color/king_2" android:gravity="center"/>
+
+				<TextView
+				    android:id="@+id/txtAlbum"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:textAppearance="?android:attr/textAppearanceSmall" 
+				    android:textColor="@color/king_2" android:gravity="center"/>
+
+			</LinearLayout>
+       		
+        </LinearLayout>        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <ListView
+                android:id="@+id/listViewRecTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chronometer" android:textColor="@color/king_5"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_weight="1">
+		            <SeekBar
+		                android:id="@+id/seekBar"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="20dip"/>                    
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/king_5"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play" android:background="@null"/>
+
+
+                
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

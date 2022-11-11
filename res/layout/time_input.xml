@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:layout_margin="10dip">
+    <FrameLayout android:layout_width="fill_parent" android:id="@+id/frameLayout1" android:layout_height="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:orientation="vertical" android:background="@drawable/back__gradient">
+			<LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:background="@drawable/title_gradient">
+				<ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1"></ImageView>
+				<TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/txtTitle"></TextView>
+			</LinearLayout>        
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/frameLayout1" android:layout_gravity="center_horizontal" android:layout_marginBottom="10dip">
+			
+				<four.non.bronds.yyys.zzztimer.widgets.spinner.CustomSpinner
+					xmlns:app="http://schemas.android.com/apk/res/com.my.scroller"
+					android:id="@+id/custom_spinner_hour" style="@style/green_glass"
+					android:layout_margin="10px" />
+		                 
+				<four.non.bronds.yyys.zzztimer.widgets.spinner.CustomSpinner
+					xmlns:app="http://schemas.android.com/apk/res/com.my.scroller"
+					android:id="@+id/custom_spinner_minite" style="@style/green_glass"
+					android:layout_margin="10px" android:layout_marginBottom="50px"/>		
+			
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/title_gradient" android:orientation="horizontal" android:layout_weight="1">
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="10dip" android:text="Cancel" style="@style/ButtonBrown" android:id="@+id/btnCancel"></Button>
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="10dip" android:text="OK" style="@style/ButtonBrown" android:id="@+id/btnOK"></Button>
+			</LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    
+</LinearLayout>

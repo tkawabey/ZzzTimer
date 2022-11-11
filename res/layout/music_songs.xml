@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_weight="1" android:background="@color/king_6">
+			<ImageView android:src="@drawable/play_music_on" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/imageIcon"></ImageView>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+				<TextView 
+				    android:layout_height="wrap_content" 
+				    android:textAppearance="?android:attr/textAppearanceLarge" 
+				    android:layout_width="fill_parent" 
+				    android:id="@+id/textTitle" 
+				    android:textColor="#FFFFFF" 
+				    android:textStyle="bold"
+				    android:textSize="24sp" 
+				    android:text="@string/play_music_select" 
+				    android:layout_gravity="center_vertical"></TextView>
+
+				<TextView
+				    android:id="@+id/txtArtist"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Small Text"
+				    android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/king_2"/>
+
+			</LinearLayout>
+       		
+        </LinearLayout>        
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+	    <ListView
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"/>
+
+    </FrameLayout>
+    
+</LinearLayout>
